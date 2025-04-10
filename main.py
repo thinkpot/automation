@@ -145,12 +145,12 @@ def register_webinar():
     # ─── TEST REMINDER ─────────────────────────────────────
     # schedule a one‑off test remi
     # nder 60 seconds from now
-    # test_text = "🔔 [Test] You just registered! This reminder is 1 minute later."
-    # send_whatsapp_reminder.apply_async(
-    #     args=[phone, test_text, wd.strftime('%Y-%m-%d'), wt.strftime('%H:%M'), name],
-    #     countdown=5
-    #     # alternatively, use eta=datetime.utcnow() + timedelta(minutes=1)
-    # )
+    test_text = "🔔 [Test] You just registered! This reminder is 1 minute later."
+    send_whatsapp_reminder.apply_async(
+        args=[phone, test_text, wd.strftime('%Y-%m-%d'), wt.strftime('%H:%M'), name],
+        countdown=5
+        # alternatively, use eta=datetime.utcnow() + timedelta(minutes=1)
+    )
     # ────────────────────────────────────────────────────────
     
     return jsonify({'status': 'registered', 'id': reg.id}), 201
