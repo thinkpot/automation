@@ -1,0 +1,56 @@
+# Byte‑compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Flask instance folder
+instance/
+.webassets-cache/
+
+# SQLite database
+*.db
+registrations.db
+
+# Celery beat schedule & PID files
+celerybeat-schedule
+celerybeat.pid
+
+# Logs
+*.log
+
+# Environment variables
+.env
+*.env
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS files
+.DS_Store
+
+# swap files
+*.swp
